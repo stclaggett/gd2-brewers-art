@@ -19,43 +19,58 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="css/skeleton.css" rel="stylesheet">
   <style type="text/css">
+  
 
  html{background-image: url(img/bg-texture-bk-dark.jpg);} 
    body{font-family: garamond; color:rgba(255,255,255,0.3); }  
   .site-header{width: auto; background-repeat:repeat;}
   .navigation{ padding-top: 10px; background-color: rgba(39,36,30,.8); height: 60px; color: rgba(255,255,255,0.3); font-size: 30px; font-family: garamond; text-align: center; word-spacing: 70px; }
-  
+  a{text-decoration:none; color: rgba(255,255,255,0.4);}
+  a:hover{color: rgba(130,107,65,1);text-decoration: none;}
+  a:visited{color: rgba(130,107,65,1);}
   .logo{background-color: rgba(255,255,255,0); margin-bottom:60px; }
   
-  .logo img { display: block; margin: 0 auto; }
+  .logo img {display: block; margin: 0 auto; }
   
   .address{font-family: garamond; text-align: center;}
   p{margin:0;}
 
-  .title{ background:url(img/spiral.png) left no-repeat; padding: 10px; margin: 0; font-family: garamond; text-align: center; font-size: 30px; padding-bottom: 5px; padding-top:30px;}
+  .title { background:url(img/spiral.png) left no-repeat; padding: 10px; margin: 0; font-family: garamond; text-align: center; text-transform: uppercase; font-size: 30px; padding-bottom: 5px; padding-top:30px; color:rgba(255,255,255,0.3); }
   
+  .title-beer { background-image:url(img/beer.png); }
+  
+  .title-wine { background-image:url(img/wine.png); }
+  
+
 
   .menu_section {margin-bottom:60px; height:auto;}
 
 
   .menu_section img { max-width: 100%;}
+  
   .menu_image { overflow: hidden; border-radius: 50%;}
+  
   .menu_image img { width: auto; max-width: inherit; height: 340px;}
 
   .menu_section .menu_items {float: right; margin-left: 0; background-color: rgba(39,36,30,.8);}
 
-  .item { font-family: garamond; font-size:30px; rgba(212,209,149,0.6);}
-  .item-title { margin: 0; font-weight: normal;}
-  .stuff{margin:0; padding-bottom: 30px;font-size: 18px;font-style:italic;}
+  .item { font-family: garamond; font-size:30px;}
+  
+  .item-title { margin: 0; font-weight: normal;color:rgba(130,107,65,1); text-align:left; padding-left:20px;}
+  
+  .drink-type { margin: 0; font-weight: normal; color:rgba(130,107,65,1);}
+  
+  .stuff{margin:0; padding-bottom: 30px;font-size: 18px;}
+  
   .price{padding-right: 10px; float: left; padding-bottom: 80px;}
 
   .hr-middle{margin-left:auto; margin-right:auto; width:60%; height:1px; border:none; color:#333; background-color:#333;}
 
-  .menu_section{margin-top:10px; }
+  .menu_section{margin-top:10px;}
   
-  body:before,
-  body:after { content: ""; display: block; width: 100%; height: 50px; }
+  /* drink menus */
  
+ .whiskey{padding-left:20px;}
 
 
   </style>
@@ -70,9 +85,9 @@
 
   <div class="site-header">
     <div class="navigation 6 column">
-      MENU
-      DRINKS
-      EVENTS
+      <a href="#appetizers">MENU</a>
+      <a href="#beer">DRINKS</a>
+      RESERVATIONS
       LOCATION
     </div>
   </div>
@@ -91,7 +106,8 @@
 
     <div class="menu_section clearfix ">
       <div class="menu_items">
-        <p class="title">Appetizers</p>
+      <div id="appetizers">
+        <p class="title">APPETIZERS</p></div>
         <hr class="hr-middle">
       	<!-- Menu Item Start -->
         <div class="one-third column">
@@ -162,15 +178,15 @@
     
     <!-- End Appetizer Section -->   
     
-  </div>    
-  <div class="container" id="menu">
+  
+  <div class="container menu">
         
     <!-- Start Entree Section -->
 
     <div class="menu_section clearfix ">
       <div class="menu_items">
 
-        <p class="title" style="padding-top: 50px 0;">Entrees</p>
+        <p class="title" style="padding-top: 50px 0;">ENTREES</p>
         <hr class="hr-middle">
 
       	<!-- Menu Item Start -->
@@ -228,13 +244,13 @@
     <!--Entree section end--> 
     
   </div>    
-  <div class="container" id="menu">
+  <div class="container menu">
     
     <!-- Start dessert Section -->
 
     <div class="menu_section clearfix ">
       <div class="menu_items">
-        <p class="title" style="padding-top: 50px;">Dessert</p>
+        <p class="title" style="padding-top: 50px;">DESSERT</p>
         <hr class="hr-middle">
       	<!-- Menu Item Start -->
         <div class="one-third column">
@@ -283,90 +299,70 @@
 
     
 		<!--END DESSERT section -->
+  </div>
+  
+  
+  <div class="container menu">
     
-  </div>    
-  <div class="container" id="menu">
-    
-	    <!-- Start beer Section -->
+    <!-- Start dessert Section -->
 
     <div class="menu_section clearfix ">
       <div class="menu_items">
-        <p class="title" style="padding-top: 50px;">Beer</p>
+        <p class="title drinks" style="padding-top: 50px;">Drinks</p>
         <hr class="hr-middle">
       	<!-- Menu Item Start -->
         <div class="one-third column">
-          <p class="price">$7</p>
-          <p class="item-title">CHOCOLATE PROLETARY TORTE</p>
-          <p class="stuff">Dark Chocolate Cake, a hint of Proletary Ale, Chocolate Ganache</p>
+          <h3 class="drink title title-beer">Beer</h3>
+          
+          <div class="items">
+          	<h4 class="drink-type">HOUSE</h4>
+	          <p class="item-title">Resurrection</p>
+	          <p class="item-title">Ozzy</p>
+	          <p class="item-title">Birdhouse</p>
+	          <p class="item-title">St. Festivus</p>
+	          <p class="item-title">Green Peppercorn Tripel (GPT)</p>
+	          <p class="item-title">Sangreal</p>
+	          <p class="item-title">Zodiac Ale</p>
+	          <p class="item-title">Proletary Ale</p>
+          </div>
+          
+          <div class="items"><h4 class="drink-type">HOPS</h4>
+	          <p class="item-title">Resurrection</p>
+	          <p class="item-title">Ozzy</p>
+	          <p class="item-title">Birdhouse</p>
+	          <p class="item-title">St. Festivus</p>
+	          <p class="item-title">Green Peppercorn Tripel (GPT)</p>
+	          <p class="item-title">Sangreal</p>
+	          <p class="item-title">Zodiac Ale</p>
+	          <p class="item-title">Proletary Ale</p></div>
         </div>
         <!-- Menu Item End -->
         <!-- Menu Item Start -->
         <div class="one-third column">
-          <p class="price">$8</p>
-          <p class="item-title">PUMPKIN CAKE</p>
-          <p class="stuff">Pumpkin spice cake with candied ginger, rum caramel cream cheese frosting</p>
+        	<h3 class="drink-type title title-wine">Wine</h3>
         </div>
         <!-- Menu Item End -->		
         <!-- Menu Item Start -->
         <div class="one-third column">
-          <p class="price">$9</p>
-          <p class="item-title">PECAN ALMOND TART</p>
-          <p class="stuff">Brown Butter Filling, Almond Shortbread Crust, Drizzled with Chocolate</p>
+        	<h3 class="drink-type title title-whiskey">Whiskey</h3>
         </div>
         <!-- Menu Item End -->		
-        <!-- Menu Item Start -->
-        <div class="one-third column">
-          <p class="price">$8</p>
-          <p class="item-title">ALMOST BREAD PUDDING</p>
-          <p class="stuff">Semolina Custard, Apricots, and Cherries</p>
-        </div>
-        <!-- Menu Item End -->		
-        <!-- Menu Item Start -->
-        <div class="one-third column">
-          <p class="price">$7</p>
-          <p class="item-title">PHYLLO APPLE TART</p>
-          <p class="stuff">Crème Anglaise, Caramel, and Raspberry Sauce</p>
-        </div>
-        <!-- Menu Item End -->		
-        <!-- Menu Item Start -->
-        <div class="one-third column">
-          <p class="price">$8</p>
-          <p class="item-title">CHEESECAKE</p>
-          <p class="stuff">Vanilla Bean Goat Cheese, Housemade Peach Jam, Whipped Cream</p>
-        </div>
-        <!-- Menu Item End -->
-        <!-- Menu Item Start -->
-        <div class="one-third column">
-          <p class="price">$10</p>
-          <p class="item-title">CRISPY RED THUMB POTATOES</p>
-          <p class="stuff">Warm Keswick Creamery Tomme, Smoked Pear Butter, Walnut Streusel, Fig Gastrique</p>
-        </div>
-        <!-- Menu Item End -->
-        <!-- Menu Item Start -->
-        <div class="one-third column">
-          <p class="price">$14</p>
-          <p class="item-title">SAFFRON CAVATELLI</p>
-          <p class="stuff">Veal Ragu, Meyer Lemon Gremolata</p>
-        </div>
-        <!-- Menu Item End -->        
-        <!-- Menu Item Start -->
-        <div class="one-third column">
-          <p class="price">$28</p>
-          <p class="item-title">STEAK FRITES</p>
-          <p class="stuff">Grilled Vintage Hanger Steak, Rosemary Garlic Fries, Red Wine Shallot Sauce</p>
-        </div>
       </div>
     </div>
+
     
+		<!--END DESSERT section -->
+  </div>
+      </div>
+    </div>  
         <!--menu Item End -->        
 		<!--END beers section -->
-		<!-- Start drink Section -->
+	
 
 
       
-        </div><!-- price -->
+     
       </div><!-- one-third column -->
-    </div><!--menu_items eight columns offset-by-two-->   
 
        	 <!-- Menu Item End -->
 
