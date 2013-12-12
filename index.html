@@ -8,9 +8,9 @@
 <!--<![endif]-->
 
 <head>
-  <link href='http://fonts.googleapis.com/css?family=Duru+Sans' rel='stylesheet' type='text/css'>
-  
-  <meta charset="utf-8">
+<link href='http://fonts.googleapis.com/css?family=Montaga' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Duru+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:100,' rel='stylesheet' type='text/css'>
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
 
   <title>BREWER'S ART</title>
@@ -30,10 +30,10 @@
  html{background-image: url(img/bg-texture-bk-dark.jpg);} 
    body{font-family: hoefler; color:rgba(255,255,255,0.3); }  
   .site-header{width: auto; background-repeat:repeat;}
-  .navigation{ padding-top: 10px; background-color: rgba(39,36,30,.8); font-size: 30px; font-family: letter gothic; font-style:light; text-align: center; word-spacing: 200px; }
+  .navigation{ padding: 10px; background-color: rgba(39,36,30,.8); font-size: 30px; font-family: 'Lato', sans-serif; text-align: center; }
   a{text-decoration:none; color: rgba(255,255,255,0.6);}
   a:hover{color:rgba(255,255,255,0.2); text-decoration: none;}
-  .logo{background-color: rgba(255,255,255,0); margin-bottom:60px; }
+  .logo{background-color: rgba(255,255,255,0); margin-bottom:60px; margin-top: 40px;}
   
   #headerImage img {
     margin-bottom: 50px;
@@ -49,7 +49,7 @@
   .address{font-family: hoefler; text-align: center;}
   p{margin:0;}
 
-  .title { background:url(img/spiral-01.png) left no-repeat; padding: 10px; margin: 0; font-family: letter gothic; text-align: center; text-transform: uppercase; font-size: 30px; padding-bottom: 5px; padding-top:30px; color: rgba(142,111,49,0.9); }
+  .title { background:url(img/spiral-01.png) left no-repeat; padding: 10px; margin: 0; font-family: 'Lato', sans-serif; text-align: center; text-transform: uppercase; font-size: 30px; padding-bottom: 5px; padding-top:30px; color: rgba(142,111,49,0.9); }
   
   .drink { padding-bottom: 20px; font-size: 24px; color: rgba(142,111,50,1); background:none; }
   
@@ -65,13 +65,14 @@
   .menu_section .menu_items {float: right; margin-left: 0; background-color: rgba(39,36,30,.8);}
 
   
-  .item-title { margin: 0; padding-top: 15px; font-family: caslon; font-style: normal; font-size: 16px; color: rgba(255,255,255,0.6); text-align:left; padding-left:50px; text-indent: -17px; text-transform:uppercase;}
+  .item-title { margin: 0; padding-top: 15px; font-family: 'Montaga', serif; font-size: 16px; color: rgba(255,255,255,0.6); text-align:left; padding-left:50px; text-indent: -17px; text-transform:uppercase;}
   
-  .drink-type {padding-top: 10px; padding-left: 10px; text-indent: 0px; font-weight: normal; text-transform:uppercase;}
+  .drink-type {padding-top: 10px; padding-left: 10px; text-indent: 0px; text-transform:uppercase;}
   
   .stuff{margin:0; padding-bottom: 15px; font-size: 14px; padding-left: 33px; color:rgba(142,111,49,0.95); text-transform:capitalize; font-family: 'Duru Sans';}
 
   .drink-stuff{margin:0; font-size: 14px; padding-left: 33px; color:rgba(142,111,50,1); font-family: 'Duru Sans'; text-transform:capitalize;}
+  
   
   .price{padding-left: 5px; padding-top: 15px; float: left; font-size: 16px; font-family: serif;color: rgba(255,255,255,0.6);}
 
@@ -79,9 +80,10 @@
 
   .menu_section{margin-top:10px;}
 
-  .footer{text-align: center; background-color: rgba(39,36,30,.8); height: 60px; color: rgba(255, 255, 255,.3); padding-top: 10px; }
+  .footer{text-align: center; color: rgba(255,255,255,0.6); background-color: rgba(39,36,30,.8); height: 70px; padding-top: 20px; padding-bottom: 10px; font-family: 'Lato', sans-serif; font-size: 20px; }
   
-  .navitem{display:inline-block;}
+  .navitem{display:inline-block; padding-left: 10px; padding-right: 10px;}
+  
   
   .icon{opacity: .5;}
   .icon:hover{opacity:1;}
@@ -99,13 +101,14 @@
 <div class="sixteen columns">
   <div class="site-header">
     <ul class="navigation sixteen columns mainnav">
-   <a href="#appetizers">  <li class="four columns navitem">MENU</li></a>
+     <a href="#appetizers">  <li class="four columns navitem">MENU</li></a>
      <a href="#drinks"> <li class="four columns navitem">DRINKS</li></a>
      <div class="four columns navitem"> <a href="http://www.opentable.com/the-brewers-art-reservations-baltimore?restref=45061">RESERVATIONS</a></div>
-     <a href="#location"> <div class="four columns navitem">LOCATION/HOURS</div></div>
+     <a href="#location"> <div class="four columns navitem">HOURS/LOCATION</a>
     </ul>
   </div>
-  
+ </div>
+
   
   
   
@@ -507,15 +510,17 @@
         <!-- Menu Item Start -->
         <div class="one-third column">
           <a href="https://maps.google.com/maps?f=d&source=s_q&hl=en&geocode=%3BCWRrUkLUvQQYFXO2VwIdPO1u-ymXbPttlgTIiTFYybvsvYM8DA&q=1106+North+Charles+Street,+Baltimore,+MD&aq=0&oq=1106+North+&sll=38.804821,-77.236966&sspn=2.953569,5.789795&ie=UTF8&hq=&hnear=1106+N+Charles+St,+Baltimore,+Maryland+21201&t=m&ll=39.314047,-76.617193&spn=0.013879,0.02223&z=14&vpsrc=6&iwloc=A&daddr=1106+N+Charles+St,+Baltimore,+MD+21201">
-          <img src="img/map.png" alt="GoogleMapOfBrewersArt" style="margin-bottom: 10px;">
-          <div class="item-title" id="directions">Get Directions</div></a>
+         <img src="img/map.png" alt="GoogleMapOfBrewersArt" style="margin-bottom: 10px;">
+         <div class="item-title" id="directions" style="font-family: 'Lato', sans-serif;">Get Directions</div>
+	         
+         </a>
         </div>
         <!-- Menu Item End -->		
       	<!-- Menu Item Start -->
         <div class="two-thirds column">
           <p class="item-title">Location</p>
-          <p class="stuff" style="text-transform: none;"> The Brewer's Art is a restaurant and microbrewery located in a nineteenth century townhouse in historic Mount Vernon at:<br></p>
-          <p class="stuff" style="text-transform: none; font-size: 20px; margin-left: 24px; color: rgba(255,255,255,.7); font-family: letter gothic;"> 1106 North Charles Street<br> Baltimore, MD 21201<br>Telephone: (410) 547-6925</p>
+          <p class="stuff" style="text-transform: none;">The Brewer's Art is a restaurant and microbrewery located in a nineteenth century townhouse in historic Mount Vernon at:<br></p>
+          <p class="stuff" style="text-transform: none; font-size: 20px; margin-left: 24px; color: rgba(255,255,255,.7); font-family: 'Lato', sans-serif;"> 1106 North Charles Street<br> Baltimore, MD 21201</p>
           <p class="item-title">Hours</p>
           <p class="stuff" style="text-transform: none;"> We are open daily 4:00pm to 1:45am with our full dinner service starting at 5:00. We'll see you there!</p>
 		  </div>
@@ -549,9 +554,9 @@
  
  
  
- <div class="footer" style="text-transform: none; font-size: 20px; color: rgba(255,255,255,.7); font-family: caslon;">
+ <div class="footer">
+   	Feel free to call: (410) 547-6925, or e-mail us: <a href="mailto:info@thebrewersart.com">info@thebrewersart.com</a><br>
     <a href="https://www.facebook.com/pages/Official-Brewers-Art-Fan-Page/53372142630?fref=ts"><img class="icon" src="img/facebook.png" onmouseover="this.src='img/facebook.png'" onmouseout="this.src='img/facebook.png'" /></a>
- 	Feel free to contact us: <a href="mailto:info@thebrewersart.com">info@thebrewersart.com</a>
  	<a href="https://twitter.com/search?q=brewers%20art&src=typd"><img class="icon" src="img/twitter.png" onmouseover="this.src='img/twitter.png'" onmouseout="this.src='img/twitter.png'"  /></a>
  </div>
 <!-- End #menu Container That goes around all of our content -->
