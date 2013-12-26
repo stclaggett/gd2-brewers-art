@@ -1,0 +1,28 @@
+.sarahalignright{
+	text-align: right;
+}
+
+.clearfix{
+	position: relative;
+}
+
+.edgy{
+	color:white;
+}
+
+.bottom{
+	text-align:end; top:450px; 
+}
+
+.down{
+	top: 110px;
+}
+
+.lower{
+	top: 250px; color: white; left: 20px;
+}
+
+
+.width{
+	width: 200px;
+}

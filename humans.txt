@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+   Sarah Claggett designer and developer :)
 
 # THANKS
 
-    <name>
+    Ben Kutil
 
 # TECHNOLOGY COLOPHON
 
